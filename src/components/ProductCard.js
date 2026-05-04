@@ -37,7 +37,7 @@ const ProductCard = ({ product, compact = false }) => {
             {product.name}
           </h3>
           <p className="text-[#D4AF37] text-xl font-semibold mb-2">
-            {product.price.toFixed(2)} €
+            {product.price.toFixed(2)} $
           </p>
           <p className="text-gray-400 text-xs mb-3">
             {product.stock > 0 ? `${product.stock} en stock` : 'Rupture de stock'}
@@ -74,7 +74,7 @@ const ProductCard = ({ product, compact = false }) => {
           {product.name}
         </h3>
         <p className="text-[#D4AF37] text-2xl font-semibold mb-3">
-          {product.price.toFixed(2)} €
+          {product.price.toFixed(2)} $
         </p>
         <p className="text-gray-400 text-sm mb-4">
           {product.stock > 0 ? `${product.stock} en stock` : 'Rupture de stock'}
