@@ -167,7 +167,7 @@ const AdminProducts = () => {
             <input
               type="number"
               step="0.01"
-              placeholder="Prix (€)"
+              placeholder="Prix ($)"
               value={formData.price}
               onChange={(e) => setFormData({ ...formData, price: e.target.value })}
               className="w-full bg-[#0B0B0B] border border-white/10 rounded-2xl px-5 py-4 text-white placeholder-gray-500 focus:outline-none focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] transition-all"
@@ -229,7 +229,7 @@ const AdminProducts = () => {
               
               <div className="flex-1">
                 <h3 className="font-serif text-lg text-white mb-1">{product.name}</h3>
-                <p className="text-[#D4AF37] text-lg font-semibold">{product.price.toFixed(2)} €</p>
+                <p className="text-[#D4AF37] text-lg font-semibold">{product.price.toFixed(2)} $</p>
                 <p className="text-gray-400 text-sm">Stock: {product.stock}</p>
               </div>
 
